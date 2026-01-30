@@ -1,0 +1,25 @@
+.panel {
+  background: rgba(20,18,40,0.68);
+  border-radius: 10px;
+  padding: 16px;
+  height: 62vh;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 800;
+  opacity: 0.95;
+}
+
+.list {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 8px;
+}

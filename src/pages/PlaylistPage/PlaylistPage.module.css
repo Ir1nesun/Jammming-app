@@ -1,0 +1,111 @@
+.page {
+  display: grid;
+  gap: 14px;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.title {
+  grid-column: 2;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin: 0;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.92);
+
+  grid-column: 3;
+  justify-self: end;
+}
+
+.back:hover {
+  color: rgba(220, 190, 255, 1);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.state {
+  opacity: 0.85;
+}
+
+.error {
+  color: crimson;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  text-decoration: none;
+
+  background: rgba(20, 18, 40, 0.68);
+  border: 1px solid rgba(182, 124, 255, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+
+  color: rgba(255, 255, 255, 0.92);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+}
+
+.cardName {
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+.cardMeta {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.delete {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 0.45);
+  opacity: 0;
+}
+
+.card:hover .delete {
+  opacity: 1;
+}
+
+.delete:hover {
+  color: crimson;
+}

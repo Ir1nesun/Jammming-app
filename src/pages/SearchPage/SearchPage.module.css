@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.error {
+  color: crimson;
+  text-align: center;
+}
+
+.busy {
+  text-align: center;
+  opacity: 0.8;
+}
